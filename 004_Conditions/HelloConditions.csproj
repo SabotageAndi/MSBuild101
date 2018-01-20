@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <HelloText Condition="$(HelloText)==''">World</HelloText>
+    </PropertyGroup>
+
+
+    <Target Name="HelloWorld">
+        <Message Text="Hello $(HelloText)!" />
+    </Target>
+
+</Project>

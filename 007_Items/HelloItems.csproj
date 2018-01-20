@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+    <ItemGroup>
+        <Files Include="*.*" />
+    </ItemGroup>
+
+    <Target Name="HelloWorld"
+            Inputs="@(Files)"
+            Outputs="%(Identity).Dummy">
+        <Message Text="@(Files)" />
+    </Target>
+
+   
+
+</Project>

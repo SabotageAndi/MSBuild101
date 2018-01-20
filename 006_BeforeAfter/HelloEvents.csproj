@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Target Name="HelloWorld">
+        <Message Text="Hello World!" />
+    </Target>
+
+
+    <Target Name="Before" BeforeTargets="HelloWorld">
+        <Message Text="BeforeHelloWorld" />        
+    </Target>
+
+    <Target Name="After" AfterTargets="HelloWorld">
+        <Message Text="AfterHelloWorld" />        
+    </Target>
+
+</Project>

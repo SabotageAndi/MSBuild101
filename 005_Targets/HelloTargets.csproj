@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Target Name="HelloWorld">
+        <CallTarget Targets="PrintHello"/>
+        <CallTarget Targets="PrintWorld"/>
+        <CallTarget Targets="PrintExclamationMark"/>        
+    </Target>
+
+    <Target Name="PrintHello">
+        <Message Text="Hello" />
+    </Target>
+
+    <Target Name="PrintWorld">
+        <Message Text="World" />
+    </Target>
+
+    <Target Name="PrintExclamationMark">
+        <Message Text="!" />
+    </Target>
+
+</Project>
