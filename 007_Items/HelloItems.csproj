@@ -1,6 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-
     <ItemGroup>
         <Files Include="*.*" />
     </ItemGroup>
@@ -10,7 +9,5 @@
             Outputs="%(Identity).Dummy">
         <Message Text="@(Files)" />
     </Target>
-
    
-
 </Project>
